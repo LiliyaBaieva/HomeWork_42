@@ -27,11 +27,10 @@ public class Rectangle {
   }
 
   @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    Rectangle rectangle = (Rectangle) o;
-    return length == rectangle.length && width == rectangle.width;
+  public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (!(obj instanceof Rectangle other)) return false;
+    return this.length == other.length && this.width == other.width;
   }
 
   @Override
