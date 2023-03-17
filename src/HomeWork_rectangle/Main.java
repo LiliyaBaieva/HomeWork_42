@@ -17,6 +17,12 @@ public class Main {
 //  - если их можно совместить, повернув и наложив друг на друга.
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    Rectangle rectangle1 = readRectangle(br);
+    Rectangle rectangle2 = readRectangle(br);
+
+    Set<Rectangle> rectangleSet = new HashSet<>();
+    rectangleSet.add(rectangle1);
+    rectangleSet.add(rectangle2);
 
 
   }
