@@ -27,6 +27,11 @@ public class Rectangle {
   }
 
   @Override
+  public String toString() {
+    return String.format("Прямоугольник с длиной %d и шириной %d%n", length, width);
+  }
+
+  @Override
   public boolean equals(Object obj) {
     if (this == obj) return true;
     if (!(obj instanceof Rectangle other)) return false;
