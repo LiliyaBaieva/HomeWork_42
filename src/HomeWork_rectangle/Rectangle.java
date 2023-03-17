@@ -26,3 +26,16 @@ public class Rectangle {
     this.width = width;
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Rectangle rectangle = (Rectangle) o;
+    return length == rectangle.length && width == rectangle.width;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(length, width);
+  }
+}
